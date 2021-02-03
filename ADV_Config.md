@@ -88,7 +88,7 @@ The `fhdhr` contains all the configuration options for interfacing between this 
 # images = pass
 # method = None
 # update_frequency = 43200
-# reverse_days = -1
+# reverse_days = 1
 # forward_days = 7
 # block_size = 1800
 # xmltv_offset = +0000
