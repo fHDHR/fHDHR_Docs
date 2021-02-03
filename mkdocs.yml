@@ -1,0 +1,46 @@
+# Site Details
+site_name: fHDHR Docs
+site_description: The official guide for fHDHR
+site_author: deathbybandaid
+#site_url: https://docs.ombi.app
+#edit_uri: https://github.com/Ombi-App/Ombi.Docs/edit/development/docs/
+#repo_url: https://github.com/Ombi-App/Ombi.Docs
+#repo_name: Ombi-App/Ombi.Docs
+
+# Site appearance (logos, colours, icons)
+theme:
+  name: material
+  language: en
+  code_wrap: true
+  features:
+    - navigation.tabs
+    - navigation.instant
+  #favicon: 
+  palette:
+    scheme: preference
+  
+# Markdown extensions
+markdown_extensions:
+  - sane_lists
+  - pymdownx.highlight:
+      guess_lang: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - abbr
+
+# mkdocs function extensions
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: timeago
+      locale: en
+      fallback_to_build_date: false
+
+# Navigation Layout
+#nav:
+#  - Home: index.md
