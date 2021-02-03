@@ -1,8 +1,0 @@
-flask
-gevent
-image
-m3u8
-requests
-pycryptodome
-sqlalchemy
-simplejson
