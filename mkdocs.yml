@@ -43,5 +43,13 @@ plugins:
       fallback_to_build_date: false
 
 # Navigation Layout
-#nav:
-#  - Home: index.md
+nav:
+  - Home: index.md
+  - Config: 
+    - Basic Config: config.md
+    - Advanced Config: adv_config.md
+    #- Docker: docker.md
+  - Plugins: plugins.md
+  - WebUI: webui.md
+  - Usage: usage.md
+  - Related Projects: related_projects.md
