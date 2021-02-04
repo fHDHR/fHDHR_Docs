@@ -11,13 +11,14 @@ In this example, we're assuming you're using `/opt/docker/fhdhr/config` as the f
 
 ```bash
 mkdir -p /opt/docker/fhdhr/config
+mkdir -p /opt/docker/fhdhr/plugins
 touch /opt/docker/fhdhr/config/config.ini
 ```
 
 ## Docker CLI
 
 ```bash
-docker run -d --name=fhdhr -v /opt/docker/fhdhr/config:/app/config --network host --restart=unless-stopped fhdhr/fhdhr:latest
+docker run -d --name=fhdhr -v /opt/docker/fhdhr/config:/app/config -v /opt/docker/fhdhr/plugins:/app/plugins --network host --restart=unless-stopped fhdhr/fhdhr:latest
 ```
 
 ## Docker Compose
@@ -34,6 +35,7 @@ services:
       - TZ=Pacific/Auckland
     volumes:
       - /opt/docker/fhdhr/config:/app/config
+      - /opt/docker/fhdhr/plugins:/app/plugins
     network_mode: host
     restart: unless-stopped
 ```
