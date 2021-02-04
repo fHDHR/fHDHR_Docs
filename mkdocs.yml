@@ -45,10 +45,14 @@ plugins:
 # Navigation Layout
 nav:
   - Home: index.md
+  #- Installation: 
+    #- Linux: installation_linux.md
+    #- Docker: installation_docker.md
+    #- Windows: installation_windows.md
   - Config: 
     - Basic Config: config.md
     - Advanced Config: adv_config.md
-    #- Docker: docker.md
+    - Docker: installation_docker.md
   - Plugins: plugins.md
   - WebUI: webui.md
   - Usage: usage.md
