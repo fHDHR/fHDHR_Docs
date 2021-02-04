@@ -1,11 +1,6 @@
 # WebUI
 
-[Basic Configuration](../config)  | [Advanced Configuration](../adv_config) |  [WebUI](../webui)
-
----
-
-This Page will introduce basic handling of the script from the Web Interface provided at IP:Port
-
+This Page will introduce basic handling of the script from the Web Interface provided at IP:Port  
 The Pages are available in the buttons at the top, links to xmltv and m3u are provided at the top for ease of access.
 
 ## Main Landing Page
