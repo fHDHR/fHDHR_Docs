@@ -1,4 +1,4 @@
-<p align="center">fHDHR    <img src="images/logo.ico" alt="Logo"/></p>
+<p align="center">fHDHR    <img src="docs/images/logo.ico" alt="Logo"/></p>
 
 ---
 [Main](README.md)  |  [Setup and Usage](Usage.md)  |  [Plugins](Plugins.md)  |  [Credits/Related Projects](Related-Projects.md)
