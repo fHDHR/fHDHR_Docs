@@ -1,7 +1,7 @@
 <p align="center">fHDHR    <img src="docs/images/logo.ico" alt="Logo"/></p>
 
 ---
-[Main](README.md)  |  [Setup and Usage](Usage.md)  |  [Plugins](Plugins.md)  |  [Credits/Related Projects](Related-Projects.md)
+[Main](https://fhdhr.github.io/fHDHR_Docs/)  |  [Setup and Usage](https://fhdhr.github.io/fHDHR_Docs/usage/)  |  [Plugins](https://fhdhr.github.io/fHDHR_Docs/plugins/)  |  [Credits/Related Projects](https://fhdhr.github.io/fHDHR_Docs/related-projects/)
 ---
 **f**un
 **H**ome
