@@ -15,7 +15,8 @@ theme:
   features:
     - navigation.tabs
     - navigation.instant
-  #favicon: 
+  favicon: images/logo.ico
+  logo: images/logo.ico
   palette:
     scheme: preference
   
