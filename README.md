@@ -1,6 +1,9 @@
 # <p align="center">fHDHR    <img src="docs/images/logo.ico" alt="Logo"/></p>
 
+## Links
+
 [Main](https://fhdhr.github.io/fHDHR_Docs/)  |  [Setup and Usage](https://fhdhr.github.io/fHDHR_Docs/usage/)  |  [Plugins](https://fhdhr.github.io/fHDHR_Docs/plugins/)  |  [Credits/Related Projects](https://fhdhr.github.io/fHDHR_Docs/related-projects/)
+
 ---
 **f**un
 **H**ome
@@ -12,8 +15,7 @@
 
 ## The Boring Disclaimers
 
-_Note: these are at the top of the docs for a reason_
-
+_Note: these are at the top of the docs for a reason_  
 fHDHR is a Python service to take various sources of video and make them accessible to client software including, but not limited to*:
 
 * [Plex](https://www.plex.tv/)
