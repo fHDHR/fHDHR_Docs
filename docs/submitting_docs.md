@@ -2,7 +2,7 @@
   
 ![Doc Deployment](https://github.com/fHDHR/fHDHR_Docs/workflows/Build%20and%20deploy%20docs/badge.svg)
 
-This is the fHDHR Docs site. 
+This is the fHDHR Docs site.  
 It's not always up-to-date, because our primary developer is a bit of an overachiever.
 
 If you'd like to get involved with the project, reach out in `#fhdhr` over on [Freenode](https://freenode.net/) (and yes, we know IRC is old).

@@ -4,6 +4,8 @@
 
 [Main](https://fhdhr.github.io/fHDHR_Docs/)  |  [Setup and Usage](https://fhdhr.github.io/fHDHR_Docs/usage/)  |  [Plugins](https://fhdhr.github.io/fHDHR_Docs/plugins/)  |  [Credits/Related Projects](https://fhdhr.github.io/fHDHR_Docs/related-projects/)
 
+![Doc Deployment](https://github.com/fHDHR/fHDHR_Docs/workflows/Build%20and%20deploy%20docs/badge.svg)
+
 ---
 **f**un
 **H**ome
@@ -31,7 +33,7 @@ fHDHR core supports m3u, but with plugins can emulate an HDHomeRun, or a Plex Me
 
 ## History
 
-I got the Huappage QuadHD, and the Mohu Sail as a pandemic-project. All was fine working within Plex, but I also have emby setup as a backup to Plex when auth is broken.
+I got the Hauppage QuadHD, and the Mohu Sail as a pandemic-project. All was fine working within Plex, but I also have Emby setup as a backup to Plex when auth is broken.
 
 I thought to myself, "Self, I should look on github for a way to share my tv tuner between the two".
 
@@ -41,7 +43,7 @@ Around this same time, I stumbled upon [locast2plex by tgorgdotcom](https://gith
 
 The locast2plex code development wasn't going quite fast enough for the feature-creep in my head.
 
-I then proceded to create the initial iteration of fHDHR which I originally called "FakeHDHR". I've rewritten the core functionality a few times before landing on the current code structure, which feels 'right'.
+I then proceeded to create the initial iteration of fHDHR which I originally called "FakeHDHR". I've rewritten the core functionality a few times before landing on the current code structure, which feels 'right'.
 
 I've worked really hard to create a structure that simplifies new variants of the core code to work with different 'origin' streams. Combining these works really well with [xTeVe](https://github.com/xteve-project/xTeVe).
 
