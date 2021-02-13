@@ -3,5 +3,20 @@
         "MD003": {
             "style": "consistent"    
         }
-    }
+    },
+    "cSpell.words": [
+        "deathbybandaid",
+        "f",
+        "favicon",
+        "fhdhr",
+        "freenode",
+        "hdhr",
+        "inlinehilite",
+        "md",
+        "mkdocs",
+        "pymdownx",
+        "superfences",
+        "timeago",
+        "webui"
+    ]
 }
