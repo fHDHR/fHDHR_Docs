@@ -33,6 +33,7 @@ markdown_extensions:
       permalink: true
       toc_depth: 4
   - abbr
+  - attr_list
 
 # mkdocs function extensions
 plugins:
@@ -57,3 +58,5 @@ nav:
   - WebUI: webui.md
   - Usage: usage.md
   - Related Projects: related_projects.md
+  - Getting Involved:
+    - Submitting to the docs: submitting_docs.md
