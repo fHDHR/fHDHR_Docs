@@ -13,27 +13,56 @@ theme:
   language: en
   code_wrap: true
   features:
-    - navigation.tabs
+    - header.autohide
+    - navigation.expand
+    - navigation.indexes
     - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
   favicon: images/logo.ico
   logo: images/logo.ico
   palette:
-    scheme: preference
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   
 # Markdown extensions
 markdown_extensions:
-  - sane_lists
+  - abbr
+  - attr_list
+  - meta
+  - pymdownx.details
   - pymdownx.highlight:
       guess_lang: true
   - pymdownx.inlinehilite
   - pymdownx.keys
+  - pymdownx.saneheaders
+  - pymdownx.smartsymbols
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - sane_lists
   - toc:
       permalink: true
       toc_depth: 4
-  - abbr
-  - attr_list
+
 
 # mkdocs function extensions
 plugins:
