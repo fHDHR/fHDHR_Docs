@@ -1,14 +1,15 @@
 # Plugins
 
-There are several plugin types for fHDHR. See below for details regarding what each type is.
+There are several plugin types for fHDHR. See below for details regarding what each type is.  
+_**Note**: if you wish to use fHDHR with Plex you will need `fHDHR_plugin_interface_hdhr`, as it allows fHDHR to masquerade as an HDHomeRun device (so Plex can understand it)._
 
 ## Origins
 
 Look [here](https://github.com/fHDHR) for plugins that start with "fHDHR_plugin_origin_".
 
 An Origin plugin is where we are streaming video from. It provides fHDHR with a channel listing, and how to connect to a service to stream from.  
-Some Origin plugins will provide EPG data, those that don't will have blocks of empty timeslot data created.  
-Some Origin Plugins will provide an added webpage to the webUI.  
+Some Origin plugins will provide EPG data. Those that don't will have blocks of empty timeslot data created.  
+Some Origin Plugins will also provide an added webpage to the webUI.  
 Without an Origin plugin installed, fHDHR really cannot do much of anything.
 
 ## Interface Plugins
@@ -25,5 +26,5 @@ These plugins can allow transcoding at the fHDHR level, whereas fHDHR core canno
 
 ## EPG Plugins
 
-Look [here](https://github.com/fHDHR) for plugins that start with "fHDHR_plugin_epg_".
+Look [here](https://github.com/fHDHR) for plugins that start with "fHDHR_plugin_epg_".  
 These plugins provide alternative sources of EPG information. This can be handy for origin plugins that don't provide good/any EPG.
