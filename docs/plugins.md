@@ -15,7 +15,7 @@ Without an Origin plugin installed, fHDHR really cannot do much of anything.
 
 Look [here](https://github.com/fHDHR) for plugins that start with "fHDHR_plugin_interface_".  
 Interface plugins provide additionally access to fHDHR. By default, fHDHR provides basic channel with an accessible API for channel tuning, EPG, and m3u.  
-A plugin of most interest to the average user will be the `fHDHR_plugin_interface_hdhr` plugin which provides Plex access to fHDHR as if it was a HDHomeRun device.
+A plugin of most interest to the average user will be the `fHDHR_plugin_interface_hdhr` plugin. This plugin provides Plex access to fHDHR as if it was a HDHomeRun device, and as a result **is mandatory if you want to connect Plex to fHDHR**.
 
 ## Stream Plugins
 
