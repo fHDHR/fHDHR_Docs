@@ -1,7 +1,6 @@
-Markdown>=3.3.3
-mkdocs>=1.1.2
-mkdocs-material>=6.1.0
-mkdocs-redirects>=1.0.1
-mkdocs-git-revision-date-localized-plugin>=0.7
-Pygments>=2.7.3
-pymdown-extensions>=8.1.0
+wheel>=0.37.1
+mkdocs-material>=8.1.7
+mkdocs-redirects>=1.0.3
+mkdocs-git-revision-date-localized-plugin>=0.11
+Pygments>=2.11.2
+pymdown-extensions>=9.1
