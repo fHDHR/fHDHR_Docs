@@ -34,50 +34,7 @@ _The script will not run without this - there is no default configuration file l
 
 ### Docker
 
-This portion of the guide assumes you are using a Linux system with both docker and docker-compose installed. This (or some variation thereof) may work on Mac or Windows, but has not been tested.
-
-> TThis guide assumes we wish to use the `~/fhdhr` directory for our install (you can use whatever directory you like, just make the appropriate changes elsewhere in this guide).  
-> Run the following commands to clone the repo into `~/fhdhr/fHDHR`
-
-```bash
-cd ~/fhdhr
-git clone https://github.com/fHDHR/fHDHR.git
-```
-
-* Create your config.ini file (as described earlier in this guide) in the `~/fhdhr/fHDHR` directory.
-* While still in the `~/fhdhr` directory, create the following `docker-compose.yml` file.
-
-```yml
-version: '3'
-
-services:
-  fhdhr:
-    build: ./fHDHR
-    container_name: fhdhr
-    network_mode: host
-    volumes:
-      - ./fHDHR/config.ini:/app/config/config.ini
-```
-
-* Run the following command to build and launch the container.
-
-```bash
-docker-compose up --build -d fhdhr
-```
-
-After a short period of time (during which docker will build your new fHDHR container), you should now have a working build of fHDHR running inside a docker container.
-
-As the code changes and new versions / bug fixes are released, at any point you can pull the latest version of the code and rebuild your container with the following commands:
-
-```bash
-cd ~/fhdhr/fHDHR
-git checkout master
-git pull
-cd ~/fhdhr
-docker-compose up --build -d fhdhr
-```
-
-You can repeat these instructions for as many fHDHR containers as your system resources will allow, changing the port it runs on.
+If you wish to use fHDHR in Docker, then check out the [Docker documentation](./installation_docker.md). 
 
 ## Setup
 
