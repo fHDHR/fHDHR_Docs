@@ -18,69 +18,54 @@
 
 ### Linux
 
-The below instructions use the user "sysop", but you can run it as any user. The script will allow you to run as root, but warns against doing so.
+> The below instructions use the user "sysop", but you can run it as any user. The script will allow you to run as root, but warns against doing so.
 
-* Download the release zip, or git clone to your prefered location.  
-`cd /home/sysop && git clone https://github.com/fHDHR/fHDHR.git`
-* Navigate into your script directory and install the python requirements.  
-`cd fHDHR && pip3 install -r requirements.txt`
-* Copy the included `config.example.ini` file to a known location.  
-_The script will not run without this - there is no default configuration file location._  
-[Modify the configuration file to suit your needs.](../config)  
-`cp config.example.ini /home/sysop/config.ini`  
-* [Install plugins.](../plugins) fHDHR will technically run without plugins installed, but is particularly useless without an "origin" plugin.  
-* Install plugin python requirements file with the `pip3 install -r requirements.txt` for each plugin.  
-* Run with the path to the config file. `python3 /home/sysop/fhdhr/main.py -c=/home/sysop/config.ini`
+1. Download the release zip, or git clone to your prefered location.  
+
+```bash
+cd /home/sysop && git clone https://github.com/fHDHR/fHDHR.git
+```
+
+2. Navigate into your script directory and install the python requirements.  
+
+```bash
+cd fHDHR && pip3 install -r requirements.txt
+```
+
+3. Copy the included `config.example.ini` file to a known location:
+
+```bash
+cp config.example.ini /home/sysop/config.ini
+```
+
+> The script will not run without this - there is no default configuration file location. 
+ 
+4. Modify the configuration file to suit your needs.
+
+5. Install desired fHDHR plugins.
+
+> fHDHR will technically run without plugins installed, but is practically useless without an "origin" plugin.  
+
+6. Install plugin python requirements file:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+7. Run with the path to the config file:
+
+```bash
+python3 /home/sysop/fhdhr/main.py -c=/home/sysop/config.ini
+```
 
 ### Docker
 
-This portion of the guide assumes you are using a Linux system with both docker and docker-compose installed. This (or some variation thereof) may work on Mac or Windows, but has not been tested.
-
-> TThis guide assumes we wish to use the `~/fhdhr` directory for our install (you can use whatever directory you like, just make the appropriate changes elsewhere in this guide).  
-> Run the following commands to clone the repo into `~/fhdhr/fHDHR`
-
-```bash
-cd ~/fhdhr
-git clone https://github.com/fHDHR/fHDHR.git
-```
-
-* Create your config.ini file (as described earlier in this guide) in the `~/fhdhr/fHDHR` directory.
-* While still in the `~/fhdhr` directory, create the following `docker-compose.yml` file.
-
-```yml
-version: '3'
-
-services:
-  fhdhr:
-    build: ./fHDHR
-    container_name: fhdhr
-    network_mode: host
-    volumes:
-      - ./fHDHR/config.ini:/app/config/config.ini
-```
-
-* Run the following command to build and launch the container.
-
-```bash
-docker-compose up --build -d fhdhr
-```
-
-After a short period of time (during which docker will build your new fHDHR container), you should now have a working build of fHDHR running inside a docker container.
-
-As the code changes and new versions / bug fixes are released, at any point you can pull the latest version of the code and rebuild your container with the following commands:
-
-```bash
-cd ~/fhdhr/fHDHR
-git checkout master
-git pull
-cd ~/fhdhr
-docker-compose up --build -d fhdhr
-```
-
-You can repeat these instructions for as many fHDHR containers as your system resources will allow, changing the port it runs on.
+If you wish to use fHDHR in Docker, then check out the [Docker documentation](./installation_docker.md). 
 
 ## Setup
 
-Now that you have fHDHR running, You can navigate (in a web browser) to the IP:Port from the configuration step above.  
+Now that you have fHDHR running, you can navigate (in a web browser) to the IP:Port from the configuration step above.  
+
 If you did not setup a `discovery_address` in your config, SSDP will be disabled. This is not a problem as clients like Plex can have the IP:Port entered manually!  
+
 You can copy the xmltv link from the webUI and use that in your client software to provide Channel Guide information.
